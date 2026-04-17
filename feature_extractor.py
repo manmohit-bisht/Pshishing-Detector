@@ -25,7 +25,6 @@ def extract_feature(url):
                            'account', 'confirm', 'password', 'signin', 'free']
     
     lower_url = url.lower()
-    #count = sum(1 for word in suspicious_keyword if word in lower_url)
     sus_keyword_count = 0
     for word in sus_keyword:
         if word in lower_url:
